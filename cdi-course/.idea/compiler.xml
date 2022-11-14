@@ -14,7 +14,7 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
-      <module name="cdi-course" options="-endorseddirs $PROJECT_DIR$/target/endorsed" />
+      <module name="cdi-course" options="-endorseddirs /home/administrator/Github/Java-Enterprise-Edition-8-Beginners-Course/cdi-course/target/endorsed" />
     </option>
   </component>
 </project>
