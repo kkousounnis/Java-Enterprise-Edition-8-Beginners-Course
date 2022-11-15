@@ -1,10 +1,7 @@
 package academy.learnprogramming.beans;
 
 import academy.learnprogramming.annotations.Web;
-import academy.learnprogramming.scopes.ApplicationScope;
-import academy.learnprogramming.scopes.DependentScope;
-import academy.learnprogramming.scopes.RequestScope;
-import academy.learnprogramming.scopes.SessionScope;
+import academy.learnprogramming.scopes.*;
 import academy.learnprogramming.sessionbeans.AuditedService;
 
 import javax.annotation.PostConstruct;
@@ -20,6 +17,10 @@ public class ScopesBean implements Serializable {
     //Field injection point
     @Inject
     private RequestScope requestScope;
+
+    @Inject
+    private MyTestScope myTestScope;
+
     @Inject
     private ApplicationScope applicationScope;
 
@@ -65,6 +66,10 @@ public class ScopesBean implements Serializable {
 
     public String requestScopeHashCode() {
         return requestScope.getHashCode();
+    }
+
+    public String myTestScopeHashCode(){
+        return myTestScope.getHashCode();
     }
 
     public String applicatioinScopeHashCode() {
