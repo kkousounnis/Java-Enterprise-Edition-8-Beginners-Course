@@ -7,66 +7,55 @@ import academy.learnprogramming.scopes.RequestScope;
 import academy.learnprogramming.scopes.SessionScope;
 import academy.learnprogramming.sessionbeans.AuditedService;
 
-import java.io.Serializable;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 import javax.annotation.PostConstruct;
 import javax.annotation.PreDestroy;
 import javax.inject.Inject;
+import java.io.Serializable;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
-/**
- * @author KonstantinosK
- */
 @Web
 public class ScopesBean implements Serializable {
 
     //Field injection point
     @Inject
     private RequestScope requestScope;
-
     @Inject
     private ApplicationScope applicationScope;
 
     @Inject
     private AuditedService auditedService;
-
-
-    //Producer Object
+    
+    //Producer object
     @Inject
     private Logger logger;
-
 
     private SessionScope sessionScope;
 
     private DependentScope dependentScope;
 
-
-
-
-
-    //Lifecycle callback
+    //Lifecyle callback
     @PostConstruct
     private void init() {
         auditedService.auditedMethod();
-        logger.log(Level.INFO, "*********************************************************");
+        logger.log(Level.INFO, "*******************************************");
         logger.log(Level.INFO, "Scopes bean called");
-        logger.log(Level.INFO, "*********************************************************");
-    }
+        logger.log(Level.INFO, "********************************************");
 
+    }
 
     @PreDestroy
     private void kill() {
-        logger.log(Level.INFO, "*********************************************************");
+        logger.log(Level.INFO, "*******************************************");
         logger.log(Level.INFO, "Scopes bean gonna be killed :-( ");
-        logger.log(Level.INFO, "*********************************************************");
+        logger.log(Level.INFO, "********************************************");
     }
 
-    //Costructor injection point
+    //Constructor injection point
     @Inject
     private ScopesBean(DependentScope dependentScope) {
         this.dependentScope = dependentScope;
     }
-
 
     //Method injection point
     @Inject
@@ -74,7 +63,11 @@ public class ScopesBean implements Serializable {
         this.sessionScope = sessionScope;
     }
 
-    public String applicationScopeHashCode() {
+    public String requestScopeHashCode() {
+        return requestScope.getHashCode();
+    }
+
+    public String applicatioinScopeHashCode() {
         return applicationScope.getHashCode();
     }
 
