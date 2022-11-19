@@ -73,6 +73,7 @@ public class ScopesBean implements Serializable {
     }
 
     public String applicatioinScopeHashCode() {
+        System.err.println("This is second step 2.");
         return applicationScope.getHashCode();
     }
 
