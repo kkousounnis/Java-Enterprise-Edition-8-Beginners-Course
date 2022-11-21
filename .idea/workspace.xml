@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="47b8d07e-306a-4236-bdd7-aaf9f52c5f54" name="Changes" comment="" />
+    <list default="true" id="47b8d07e-306a-4236-bdd7-aaf9f52c5f54" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/cdi-course/src/main/java/academy/learnprogramming/events/CDI2Observer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -28,9 +34,20 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "C:/Users/kkousounnis/OneDrive - SWORD GROUP/Documents/GitHub/Java-Enterprise-Edition-8-Beginners-Course"
+    "last_opened_file_path": "C:/Users/kkousounnis/OneDrive - SWORD GROUP/Documents/GitHub/Java-Enterprise-Edition-8-Beginners-Course/cdi-course"
+  },
+  "keyToStringList": {
+    "com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File": [
+      "JAVA"
+    ]
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\kkousounnis\OneDrive - SWORD GROUP\Documents\GitHub\Java-Enterprise-Edition-8-Beginners-Course\cdi-course\src\main\java\academy\learnprogramming\events" />
+      <recent name="C:\Users\kkousounnis\OneDrive - SWORD GROUP\Documents\GitHub\Java-Enterprise-Edition-8-Beginners-Course\cdi-course\src\main\java\academy\learnprogramming\beans" />
+    </key>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
