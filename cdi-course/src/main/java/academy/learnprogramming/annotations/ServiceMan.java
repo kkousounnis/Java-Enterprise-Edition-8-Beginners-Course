@@ -13,7 +13,7 @@ public @interface ServiceMan {
 
     ServiceType value();
 
-    public enum ServiceType {
+    public enum ServiceType{
         SOLDIER, POLICE
     }
 }

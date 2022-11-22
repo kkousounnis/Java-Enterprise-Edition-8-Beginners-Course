@@ -5,9 +5,10 @@ import academy.learnprogramming.annotations.Web;
 import academy.learnprogramming.interfaces.Salute;
 
 import javax.inject.Inject;
+import java.io.Serializable;
 
 @Web
-public class QualifierWithValueBean {
+public class QualifierWithValueBean implements Serializable {
 
     @Inject
     @ServiceMan(value = ServiceMan.ServiceType.POLICE)
@@ -25,7 +26,7 @@ public class QualifierWithValueBean {
         police = policeSalute.salute(name);
     }
 
-    public void soldierSalutation() {
+    public void solidierSalutation() {
         soldier = soldierSalute.salute(name);
     }
 
@@ -52,4 +53,5 @@ public class QualifierWithValueBean {
     public void setName(String name) {
         this.name = name;
     }
+
 }

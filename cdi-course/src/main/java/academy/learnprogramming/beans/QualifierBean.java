@@ -20,16 +20,14 @@ public class QualifierBean implements Serializable {
     private Salute soldierSalute;
 
     private String police;
-
     private String soldier;
-
     private String name;
 
     public void policeSalutation() {
         police = policeSalute.salute(name);
     }
 
-    public void soldierSalutation() {
+    public void solidierSalutation() {
         soldier = soldierSalute.salute(name);
     }
 

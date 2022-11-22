@@ -1,7 +1,7 @@
 package academy.learnprogramming.sessionbeans;
 
-import academy.learnprogramming.annotations.ServiceMan;
 import academy.learnprogramming.interfaces.Salute;
+import academy.learnprogramming.annotations.ServiceMan;
 
 import javax.ejb.Stateless;
 import java.text.MessageFormat;
@@ -11,7 +11,9 @@ import java.text.MessageFormat;
 @academy.learnprogramming.annotations.Soldier
 public class Soldier implements Salute {
 
+    @Override
     public String salute(String name) {
-        return MessageFormat.format("Aya Aya Capt {0}", name);
+        return MessageFormat.format("Aye Aye Capt {0}", name);
     }
+
 }

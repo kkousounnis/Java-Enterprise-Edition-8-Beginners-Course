@@ -7,14 +7,10 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="cdi-course" />
-        <module name="hello-todo" />
-        <module name="hello-javaee8" />
       </profile>
     </annotationProcessing>
-  </component>
-  <component name="JavacSettings">
-    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
-      <module name="cdi-course" options="-endorseddirs &quot;C:\Users\kkousounnis\OneDrive - SWORD GROUP\Documents\GitHub\Java-Enterprise-Edition-8-Beginners-Course\cdi-course\target/endorsed&quot;" />
-    </option>
+    <bytecodeTargetLevel>
+      <module name="cdi-course" target="1.8" />
+    </bytecodeTargetLevel>
   </component>
 </project>
